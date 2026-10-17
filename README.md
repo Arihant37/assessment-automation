@@ -9,24 +9,26 @@
 
 ## ✅ Final Test Results
 
+Last run: 2026-10-17, Microsoft Edge, visible browser (`HEADLESS=0`).
+
 ```
 ================================================================================
                     TEST EXECUTION SUMMARY REPORT
 ================================================================================
 #    | Assignment Name                            | Status  | Duration
 --------------------------------------------------------------------------------
-1    | Task 1: Token Generation                   |  PASS   | 5.26s
-2    | Task 2: Hidden Element Toggle              |  PASS   | 4.81s
-3    | Task 3: Valid Credentials Login            |  PASS   | 14.25s
-4    | Task 4: Invalid Password Login             |  PASS   | 9.23s
-5    | Task 5: Add New Employee (PIM)             |  PASS   | 27.14s
-6    | Task 6: Create Employee Login              |  PASS   | 26.39s
-7    | Task 7: Submit Weekly Timesheet            |  PASS   | 30.67s
-8    | Task 8: Manager Rejects Timesheet          |  PASS   | 20.92s
-9    | Task 9: Add Candidate & Schedule Interview |  PASS   | 41.07s
-10   | Task 10: Candidate Hiring Stages           |  PASS   | 75.32s
+1    | Task 1: Token Generation                   |  PASS   | 5.42s
+2    | Task 2: Hidden Element Toggle              |  PASS   | 4.83s
+3    | Task 3: Valid Credentials Login            |  PASS   | 15.82s
+4    | Task 4: Invalid Password Login             |  PASS   | 8.46s
+5    | Task 5: Add New Employee (PIM)             |  PASS   | 25.18s
+6    | Task 6: Create Employee Login              |  PASS   | 41.55s
+7    | Task 7: Submit Weekly Timesheet            |  PASS   | 39.97s
+8    | Task 8: Manager Rejects Timesheet          |  PASS   | 19.61s
+9    | Task 9: Add Candidate & Schedule Interview |  PASS   | 45.57s
+10   | Task 10: Candidate Hiring Stages           |  PASS   | 77.15s
 --------------------------------------------------------------------------------
-Total Tests : 10  |  Passed : 10  |  Failed : 0  |  Total Time : ~255s
+Total Tests : 10  |  Passed : 10  |  Failed : 0  |  Total Time : ~284s
 ================================================================================
 ```
 
