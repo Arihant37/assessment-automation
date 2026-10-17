@@ -54,7 +54,7 @@ One of the following must be installed:
 | Google Chrome | Optional | https://www.google.com/chrome |
 
 > [!NOTE]
-> The tests use **Microsoft Edge** by default (headless mode). No manual ChromeDriver or EdgeDriver download is needed — `webdriver-manager` handles it automatically.
+> The tests use **Microsoft Edge** by default (headless mode). No manual ChromeDriver or EdgeDriver download is needed — **Selenium Manager** (built into Selenium 4.6+) fetches the matching driver automatically.
 
 ### 4. Internet Connection
 - Required for browser to load:
@@ -102,10 +102,11 @@ You should see something like `Python 3.12.x`. If not, download and install from
 
 ---
 
-### Step 2: Navigate to the project folder
+### Step 2: Clone the repository
 
 ```powershell
-cd C:\Users\ariha\Downloads\priya\assessment_automation
+git clone https://github.com/Arihant37/assessment-automation.git
+cd assessment-automation
 ```
 
 ---
@@ -120,7 +121,7 @@ This installs:
 | Package | Purpose |
 |---|---|
 | `selenium >= 4.20` | Browser automation framework |
-| `webdriver-manager >= 4.0` | Auto-downloads correct browser driver |
+| `webdriver-manager >= 4.0` | Optional; drivers are resolved by Selenium Manager |
 | `pytest >= 8.0` | Optional test runner with detailed reports |
 
 ---
@@ -144,7 +145,6 @@ Expected output: `Setup OK! Title: Google`
 This runs the complete suite and displays a formatted summary report:
 
 ```powershell
-cd C:\Users\ariha\Downloads\priya\assessment_automation
 python run_all_assignments.py
 ```
 
@@ -172,8 +172,8 @@ python assignment_10_candidate_hiring_stages.py
 ### ▶ Option 3: Run with Pytest (Detailed Output)
 
 ```powershell
-# Run all tests
-pytest -v
+# Run all tests (files are named assignment_*.py, so tell pytest to collect them)
+pytest -v -o python_files="assignment_*.py"
 
 # Run a specific test file
 pytest -v assignment_03_login_valid.py
@@ -418,7 +418,7 @@ python run_all_assignments.py
 
 | Feature | Implementation |
 |---|---|
-| **Explicit Waits** | `WebDriverWait` + `expected_conditions` — no `time.sleep()` abuse |
+| **Explicit Waits** | `WebDriverWait` + `expected_conditions` ; only short `time.sleep()` pauses for UI animations |
 | **Loader Handling** | `safe_click()` waits for `oxd-form-loader` spinner to disappear before clicking |
 | **Random Popup Handling** | `handle_possible_alert()` accepts or dismisses unexpected browser alerts |
 | **Unique Test Data** | `uuid.uuid4()` generates unique names/emails/usernames per run to avoid collisions |
