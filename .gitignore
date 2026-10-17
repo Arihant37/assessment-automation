@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.tox/
+.venv/
+venv/
+env/
+ENV/
+
+# Test artifacts
+.pytest_cache/
+htmlcov/
+.coverage
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Selenium screenshots (if any)
+screenshots/
+
+# Environment variables
+.env
