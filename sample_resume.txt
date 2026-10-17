@@ -1,0 +1,5 @@
+Candidate Resume
+Name: Automation QA Specialist
+Skills: Selenium, Python, Test Automation, Pytest, CI/CD, Page Object Model
+Experience: 4+ years of test automation experience with web and API testing.
+Education: Bachelor of Science in Computer Science
